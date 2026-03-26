@@ -6,7 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-     base: '/pre_man npm i gh-pages/',
+     base: '/pre_man/',
       plugins: [
     react({
       babel: {
