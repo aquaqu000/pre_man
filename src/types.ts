@@ -228,7 +228,7 @@ export const LOOKS: Look[] = [
     title: 'Morning Ritual',
     subtitle: '출근 전, 가장 나다운 시간',
     description: '부드러운 햇살 아래 즐기는 커피 한 잔. Brenwood의 린넨 셔츠는 당신의 아침을 더욱 가볍게 만듭니다.',
-    mainImage: 'https://images.unsplash.com/photo-1511424325612-b5d29dbc2a53?auto=format&fit=crop&q=80&w=1200',
+    mainImage: '/img/ss_1.png',
     scene: 'Work',
     products: [PRODUCTS[0], PRODUCTS[2]],
   },
