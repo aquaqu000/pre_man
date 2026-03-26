@@ -7,7 +7,14 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
      base: '/pre_man npm i gh-pages/',
-    plugins: [react(), tailwindcss()],
+      plugins: [
+    react({
+      babel: {
+        plugins: [['babel-plugin-react-compiler']],
+      },
+    }), tailwindcss()
+  ],
+   
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
